@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis de Física - 3r ESO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla d'inici -->
+        <div id="start-screen" class="screen active">
+            <div class="header">
+                <h1>Física en Acció</h1>
+                <p class="subtitle">Màquines simples, energia i treball</p>
+            </div>
+            
+            <div class="mode-selector">
+                <button class="mode-btn" id="practice-btn">
+                    <div class="mode-icon">🎯</div>
+                    <h2>Mode Pràctica</h2>
+                    <p>Una pregunta amb feedback immediat</p>
+                </button>
+                
+                <button class="mode-btn" id="exam-btn">
+                    <div class="mode-icon">📝</div>
+                    <h2>Mode Examen</h2>
+                    <p>5 preguntes sense feedback fins al final</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Pantalla de pregunta (Mode Pràctica) -->
+        <div id="practice-screen" class="screen">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number">Pregunta</div>
+                <h2 class="question-text" id="practice-question"></h2>
+                
+                <div class="options" id="practice-options"></div>
+                
+                <div class="feedback" id="practice-feedback"></div>
+                
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="practice-back">Tornar a l'inici</button>
+                    <button class="btn btn-primary" id="practice-next" style="display: none;">Següent pregunta</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla d'examen -->
+        <div id="exam-screen" class="screen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="exam-progress"></div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question-number" id="exam-question-number">Pregunta 1 de 5</div>
+                <h2 class="question-text" id="exam-question"></h2>
+                
+                <div class="options" id="exam-options"></div>
+                
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="exam-prev" style="display: none;">Anterior</button>
+                    <button class="btn btn-primary" id="exam-next">Següent</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de resultats -->
+        <div id="results-screen" class="screen">
+            <div class="results-container">
+                <div class="results-header">
+                    <h1>Resultats</h1>
+                    <div class="score-display" id="score-display"></div>
+                </div>
+                
+                <div class="results-list" id="results-list"></div>
+                
+                <div class="button-group">
+                    <button class="btn btn-primary" id="restart-btn">Tornar a l'inici</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
