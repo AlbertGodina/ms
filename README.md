@@ -1,4 +1,4 @@
-# Física en Acció 🎯
+# Màquines simple, física en acció 🎯
 
 Aplicació web educativa per generar exercicis aleatoris de Tecnologia i Digitalització per a 3r d'ESO.
 
@@ -22,17 +22,6 @@ L'aplicació inclou preguntes sobre:
 - Sense feedback fins al final
 - Resultats i explicacions al finalitzar
 - Ideal per avaluar coneixements
-
-## 🚀 Com utilitzar-lo
-
-### Opció 1: Veure'l en línia (Recomanat)
-1. Ves a: `https://[el-teu-usuari].github.io/fisica-en-accio/`
-2. Ja està! Comença a practicar
-
-### Opció 2: Descarregar i executar localment
-1. Descarrega tots els fitxers
-2. Obre `index.html` amb el teu navegador
-3. Comença a utilitzar l'aplicació
 
 ## 📁 Estructura del projecte
 
